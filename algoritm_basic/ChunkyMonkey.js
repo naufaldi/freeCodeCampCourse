@@ -6,7 +6,7 @@ function chunkArrayInGroups(arr, size) {
     for (var a = 0; a < arr.length; a++) {
         if (a % size !== size - 1)
             temp.push(arr[a]);
-        else {
+        else {1
             temp.push(arr[a]);
             result.push(temp);
             temp = [];
