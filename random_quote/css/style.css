@@ -1,0 +1,125 @@
+body {
+    --main-color: #613dc1;
+    --second-color: #858ae3;
+    --third-color: #4e148c;
+    background: #97dffc;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 500px;
+    background: #ffffff;
+    border-radius: 5px;
+    border-color: var(--second-color);
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 12px 0 -6px #907ec2;
+}
+
+.card-header {
+    background-color: var(--second-color);
+    -webkit-box-shadow: 0px 2px 2px #9c799c;
+    -moz-box-shdow: 0px 2px 2px #9c799c;
+    box-shadow: 0px 2px 2px #9c799c;
+    height: 70px;
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0;
+    color: white;
+}
+
+.petik {
+    font-size: 1.5em;
+}
+
+p {
+    font-family: 'Kavivanar', cursive;
+    font-size: 1em;
+    text-align: justify;
+}
+
+.card-body {
+    margin: 20px;
+}
+
+.card-footer {
+    height: 50px;
+    background-color: var(--third-color);
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    border-color: var(--main-color);
+    color: var(--main-color);
+    padding-right: 10px;
+}
+
+button:before {
+    background-color: var(--main-color);
+}
+
+.quote {
+    padding: 0.5rem;
+    text-transform: uppercase;
+    color: var(--main-color);
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--main-color);
+    overflow: hidden;
+    transition: color .5s ease-in-out;
+}
+
+.quote:before {
+    content: "";
+    background-color: var(--main-color);
+    color: white;
+}
+
+.quote:focus {
+    outline: none;
+}
+
+.quote,
+.button-quote {
+    position: relative;
+    z-index: 2;
+}
+
+.quote-animtion:before {
+    width: 0;
+    height: 0;
+    padding: 50%;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0) scale(0);
+    transition: transform .15s ease-out;
+}
+
+.quote-animtion:hover:before,
+.quote-animtion:focus:before {
+    transition-duration: .3s;
+    transform: translate3d(-50%, -50%, 0) scale(1.5);
+}
+
+.button-quote:hover {
+    color: white;
+    z-index: 6;
+}
