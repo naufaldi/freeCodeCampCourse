@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/normlize.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="css/app.js"></script>
 </head>
 
 <body>
@@ -21,15 +22,18 @@
             </div>
             <div class="card-body">
 
-                <p> <span class="fa fa-quote-left petik"></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vitae quidem beatae. Aliquam ducimus, cum labore consequuntur praesentium vero libero. Beatae voluptates commodi nulla impedit
-                    hic ad necessitatibus ullam dolorum! <span class="fa fa-quote-right petik"></span></p>
-
-                <span class="author">--- Naufaldi</span>
+                <i class="fa fa-quote-left petik"></i>
+                <span class="quotes"></span>
+                <i class="fa fa-quote-right petik"></i>
+                <p class="author"></p>
             </div>
             <div class="card-footer">
-                <button class="quote quote-animtion">
-                        <span class="button-quote">Other Quote</span>
-                    </button>
+                <button class="quote quote-animtion" id="quote">
+                       Other Quote
+                </button>
+                <button class="quote quote-animtion" id="tweet">
+                <i class="fa fa-twitter"></i> Twitter
+             </button>
             </div>
         </div>
     </div>

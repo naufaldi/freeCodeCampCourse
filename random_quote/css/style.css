@@ -7,9 +7,13 @@ body {
 
 .container {
     display: flex;
+    /* establish flex container */
     flex-direction: column;
+    /* make main-axis vertical */
     justify-content: center;
+    /* align items vertically, in this case */
     align-items: center;
+    /* align items horizontally, in this case */
 }
 
 .card {
@@ -44,9 +48,10 @@ h3 {
 
 .petik {
     font-size: 1.5em;
+    margin: 0 10px 0px;
 }
 
-p {
+.quotes {
     font-family: 'Kavivanar', cursive;
     font-size: 1em;
     text-align: justify;
@@ -54,6 +59,11 @@ p {
 
 .card-body {
     margin: 20px;
+    display: inline;
+}
+
+.author {
+    text-align: right;
 }
 
 .card-footer {
@@ -62,12 +72,16 @@ p {
     margin-bottom: 0;
     display: flex;
     justify-content: center;
+    -webkit-box-shadow: 0 -2px 2px 1px #8852c2;
+    -moz-box-shdow: 0 -2px 2px 1px #8852c2;
+    box-shadow: 0 -2px 2px 1px #8852c2;
 }
 
 button {
     border-color: var(--main-color);
     color: var(--main-color);
     padding-right: 10px;
+    cursor: pointer;
 }
 
 button:before {
