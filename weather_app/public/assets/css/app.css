@@ -58,4 +58,7 @@ h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2em;
     text-transform: uppercase;
+    margin-top: 0px;
+    align-self: flex-start;
+    justify-content: center;
 }
