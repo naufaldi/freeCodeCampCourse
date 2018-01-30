@@ -37,18 +37,25 @@ body {
 }
 
 .card-header {
+    display: flex;
     color: #ffffff;
-    font-size: 1.5em;
+    flex: 0 0 100px;
+    width: 100%;
+    justify-content: center;
+    align-self: center;
 }
 
 img {
     width: 20vh;
+    font-size: 1.5em;
 }
 
 .card-body {
-    flex: 1;
+    flex: 10 auto;
+    /*fill the available space*/
     display: flex;
     flex-direction: column;
+    align-self: center;
     text-align: center;
 }
 
@@ -62,5 +69,12 @@ h3 {
 }
 
 .card-footer {
-    align-self: flex-end;
+    display: flex;
+    flex: 0 0 50px;
+    width: 100%;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
 }
