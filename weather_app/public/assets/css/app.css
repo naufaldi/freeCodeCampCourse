@@ -1,3 +1,4 @@
+@import url('../node_modules/font-awesome/css/font-awesome.min.css');
 body {
     --bgcolor: #b2dbbf;
     --primarycolor: #70c1b3;
@@ -66,6 +67,10 @@ h3 {
     margin-top: 0px;
     align-self: flex-start;
     justify-content: center;
+}
+
+.paragraf {
+    font-size: 1em;
 }
 
 .card-footer {

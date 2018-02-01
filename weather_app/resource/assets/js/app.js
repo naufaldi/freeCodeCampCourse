@@ -1,5 +1,5 @@
 window.$ = window.jQuery = require("jquery");
 
 $(function () {
-    alert("oke")
+    alert("oke");
 })

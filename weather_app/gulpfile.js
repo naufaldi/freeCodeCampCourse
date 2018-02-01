@@ -1,8 +1,7 @@
 var gulp = require("gulp"),
 sass = require("gulp-sass"),
 autoprefixer = require("gulp-autoprefixer"),
-browserSync = require("browser-sync"),
-webpack = require("webpack-stream");
+browserSync = require("browser-sync"),;
 
 gulp.task("sass", function () {
     return gulp.src("./resource/assets/sass/**/*.scss")
@@ -12,11 +11,14 @@ gulp.task("sass", function () {
 })
 
 gulp.task("script", function(){
-    return gulp.src("./resource/assets/js/app")
+    return gulp.src("./resource/assets/js/app.js")
     .pipe(webpack(require("./webpack.config.js")))
     .pipe(gulp.dest("./public/assets/js/"));
 });
-
+gulp.task('fonts', function() {
+    return gulp.src('./node_modules/font-awesome/fonts/*')
+      .pipe(gulp.dest('public/fonts'))
+  });
 gulp.task("serve", function(){
     browserSync.init({
         server: {
